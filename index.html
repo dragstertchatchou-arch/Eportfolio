@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Jospin Tchatchou</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    /* Barre de navigation */
+    nav {
+      background: #1e1e1e;
+      color: white;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 15px 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    nav a.active {
+      background: #e63946;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: #e63946;
+    }
+
+    /* Sections */
+    section {
+      display: none;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section.active {
+      display: block;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    h1 {
+      color: #e63946;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    /* Blocs de contenu */
+    .bloc {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px 25px;
+      margin-bottom: 25px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .bloc:hover {
+      transform: translateY(-3px);
+    }
+
+    .bloc h2 {
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    .bloc p {
+      line-height: 1.6;
+      text-align: justify;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="#" class="active" onclick="showSection('accueil', this)">Accueil / Présentation personnelle</a>
+    <a href="#" onclick="showSection('parcours', this)">Parcours d’ingénierie</a>
+    <a href="#" onclick="showSection('mobilite', this)">Mobilité internationale</a>
+    <a href="#" onclick="showSection('developpement', this)">Développement durable et engagement civique</a>
+    <a href="#" onclick="showSection('sport', this)">Sport et autres activités</a>
+    <a href="#" onclick="showSection('ppp', this)">Projet Professionnel Personnel (PPP)</a>
+  </nav>
+
+  <!-- ACCUEIL -->
+  <section id="accueil" class="active">
+    <h1>Accueil / Présentation personnelle</h1>
+
+    <div class="bloc">
+      <h2>Qui suis-je ?</h2>
+      <p>
+        Je m’appelle Jospin Tchatchou, étudiant en Génie Électrique à l’École Polytechnique de Yaoundé.
+        Passionné par les énergies, leur évolution et leur gestion, je souhaite contribuer
+        au développement de solutions innovantes pour une meilleure qualité énergétique en Afrique.
+      </p>
+    </div>
+
+    <div class="bloc">
+      <h2>Objectif</h2>
+      <p>
+        Mon objectif est d’intégrer la filière SEF à l’INP Toulouse, option 3EA,
+        afin de renforcer mes compétences en systèmes électriques et efficacité énergétique,
+        tout en poursuivant une carrière orientée vers la recherche et l’innovation.
+      </p>
+    </div>
+  </section>
+
+  <!-- PARCOURS D’INGÉNIERIE -->
+  <section id="parcours">
+    <h1>Parcours d’ingénierie</h1>
+
+    <div class="bloc">
+      <h2>Formation académique</h2>
+      <p>
+        Étudiant en Génie Électrique à l’École Polytechnique de Yaoundé, j’ai acquis de solides
+        connaissances en électronique de puissance, commande des machines et efficacité énergétique.
+      </p>
+    </div>
+
+    <div class="bloc">
+      <h2>Projets techniques</h2>
+      <p>
+        - Étude et modélisation de la commande vectorielle de la machine asynchrone.<br>
+        - Dimensionnement d’un hacheur série pour alimentation USB 3.0.<br>
+        - Conception d’un système de filtrage pour onduleur à découpage.
+      </p>
+    </div>
+  </section>
+
+  <!-- MOBILITÉ INTERNATIONALE -->
+  <section id="mobilite">
+    <h1>Mobilité internationale</h1>
+
+    <div class="bloc">
+      <h2>Ouverture à l’international</h2>
+      <p>
+        J’ambitionne de poursuivre une formation en France à l’INP Toulouse dans le cadre
+        d’un échange académique. Cette expérience me permettra de découvrir de nouvelles approches
+        d’ingénierie et de renforcer mes compétences interculturelles.
+      </p>
+    </div>
+  </section>
+
+  <!-- DÉVELOPPEMENT DURABLE ET ENGAGEMENT CIVIQUE -->
+  <section id="developpement">
+    <h1>Développement durable et engagement civique</h1>
+
+    <div class="bloc">
+      <h2>Engagements personnels</h2>
+      <p>
+        Sensibilisé aux enjeux du développement durable, je participe à des initiatives visant
+        à promouvoir l’utilisation des énergies renouvelables et la réduction de la consommation énergétique.
+      </p>
+    </div>
+
+    <div class="bloc">
+      <h2>Projets liés à l’énergie</h2>
+      <p>
+        Étude d’optimisation de la consommation énergétique dans les installations industrielles
+        et contribution à des projets locaux de sensibilisation à l’efficacité énergétique.
+      </p>
+    </div>
+  </section>
+
+  <!-- SPORT ET AUTRES ACTIVITÉS -->
+  <section id="sport">
+    <h1>Sport et autres activités</h1>
+
+    <div class="bloc">
+      <h2>Activités sportives</h2>
+      <p>
+        Passionné de sport, je pratique régulièrement le football et le fitness.
+        Ces activités développent mon esprit d’équipe et ma discipline personnelle.
+      </p>
+    </div>
+
+    <div class="bloc">
+      <h2>Centres d’intérêt</h2>
+      <p>
+        Lecture scientifique, nouvelles technologies, et développement personnel.
+      </p>
+    </div>
+  </section>
+
+  <!-- PPP -->
+  <section id="ppp">
+    <h1>Projet Professionnel Personnel (PPP)</h1>
+
+    <div class="bloc">
+      <h2>Objectif à long terme</h2>
+      <p>
+        Devenir ingénieur-chercheur en systèmes électriques intelligents,
+        en contribuant à la modernisation et à la fiabilité des réseaux électriques africains.
+      </p>
+    </div>
+
+    <div class="bloc">
+      <h2>Motivation</h2>
+      <p>
+        Mon parcours académique et mes expériences m’ont conforté dans la volonté de mettre
+        mes compétences au service du développement énergétique durable.
+      </p>
+    </div>
+  </section>
+
+  <script>
+    function showSection(id, element) {
+      // Masquer toutes les sections
+      document.querySelectorAll("section").forEach((sec) => sec.classList.remove("active"));
+      // Supprimer la classe active de tous les liens
+      document.querySelectorAll("nav a").forEach((a) => a.classList.remove("active"));
+      // Activer la section et le lien choisis
+      document.getElementById(id).classList.add("active");
+      element.classList.add("active");
+    }
+  </script>
+</body>
+</html>
