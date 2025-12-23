@@ -3,218 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jospin Tchatchou - Portfolio</title>
+    <title>Jospin Tchatchou - Accueil</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <style>
-        /* --- ESTHÉTIQUE GÉNÉRALE --- */
-        :root {
-            --primary-color: #003366; /* Bleu Ingénieur/N7 */
-            --accent-color: #e63946;  /* Rouge léger pour l'accent */
-            --text-color: #333;
-            --bg-color: #f4f7f6;
-            --white: #ffffff;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        /* --- BARRE DE NAVIGATION --- */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 5%;
-            background-color: var(--white);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo-container img {
-            height: 50px; /* Ajuste la taille du logo ici */
-            width: auto;
-        }
-
-        /* --- SECTION HÉRO (PRINCIPALE) --- */
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh; /* Prend toute la hauteur de l'écran */
-            padding: 0 10%;
-            padding-top: 80px; /* Pour compenser le menu fixe */
-        }
-
-        .hero-content {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 50px;
-            max-width: 1200px;
-        }
-
-        /* Texte et Présentation */
-        .text-section {
-            flex: 1;
-        }
-
-        h1 {
-            font-size: 3rem;
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 300;
-            color: #555;
-            margin-bottom: 1.5rem;
-        }
-
-        p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            text-align: justify;
-        }
-
-        /* Photo de profil */
-        .image-section {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-        }
-
-        .profile-pic {
-            width: 350px;
-            height: 350px;
-            object-fit: cover;
-            border-radius: 50%; /* Rend l'image ronde */
-            border: 5px solid var(--primary-color);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-        }
-
-        /* --- BOUTONS RESEAUX SOCIAUX --- */
-        .social-links {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            text-decoration: none;
-            padding: 12px 25px;
-            border-radius: 30px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            color: var(--white);
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .btn i {
-            margin-right: 10px;
-            font-size: 1.2rem;
-        }
-
-        /* Couleurs spécifiques des boutons */
-        .linkedin { background-color: #0077b5; }
-        .email { background-color: #ea4335; }
-        .whatsapp { background-color: #25D366; }
-        .phone { background-color: var(--primary-color); }
-
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-            opacity: 0.9;
-        }
-
-        /* --- RESPONSIVE (MOBILE) --- */
-        @media (max-width: 768px) {
-            .hero-content {
-                flex-direction: column-reverse; /* L'image passe au dessus sur mobile */
-                text-align: center;
-                gap: 30px;
-            }
-
-            .profile-pic {
-                width: 200px;
-                height: 200px;
-            }
-
-            .social-links {
-                justify-content: center;
-            }
-            
-            p {
-                text-align: center;
-            }
-        }
-    </style>
 </head>
 <body>
-
     <nav>
         <div class="logo-container">
-            <img src= "INP-ENSEEIHT.png" alt="Logo INP ENSEEIHT">
+            <a href="index.html">
+                <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/e/e0/Logo_INP_ENSEEIHT.svg/1200px-Logo_INP_ENSEEIHT.svg.png" alt="Logo INP ENSEEIHT">
+            </a>
         </div>
-        </nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#">Mon Parcours <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="experience.html">Formation & Expérience</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Réalisations <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="projets.html">Projets Techniques</a>
+                </div>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <section class="hero">
         <div class="hero-content">
-            
             <div class="text-section">
                 <h1>Jospin Tchatchou</h1>
                 <h2>Ingénieur en devenir | Énergie & Systèmes Électriques</h2>
-                
                 <p>
-                    Bonjour, je suis <strong>Jospin Tchatchou</strong>.
-                    <br><br>
+                    Bonjour, je suis <strong>Jospin Tchatchou</strong>.<br><br>
                     Issu de l'<strong>École Nationale Supérieure Polytechnique de Yaoundé</strong>, je poursuis actuellement un double diplôme à l'<strong>INP-ENSEEIHT</strong> (Toulouse). 
-                    <br><br>
-                    Spécialisé dans le parcours <em>Énergie et Systèmes Électriques du Futur</em>, je suis passionné par les réseaux électriques intelligents, la conversion d'énergie et l'efficacité énergétique des systèmes complexes.
+                    Spécialisé dans le parcours <em>Énergie et Systèmes Électriques du Futur</em>, je suis passionné par les réseaux électriques intelligents, la conversion d'énergie et l'efficacité énergétique.
                 </p>
-
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/jospin-tchatchou" target="_blank" class="btn linkedin">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                    
-                    <a href="mailto:jospinfils.tchatchounzigna@etu.inp-n7.fr" class="btn email">
-                        <i class="fas fa-envelope"></i> Email
-                    </a>
-
-                    <a href="https://wa.me/33746517724" target="_blank" class="btn whatsapp">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                    </a>
-
-                    <a href="tel:+33746517724" class="btn phone">
-                        <i class="fas fa-phone"></i> +33 7 46 51 17 24
-                    </a>
+                    <a href="https://www.linkedin.com/in/jospin-tchatchou" class="btn linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="mailto:jospinfils.tchatchounzigna@etu.inp-n7.fr" class="btn email"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="https://wa.me/33746517724" class="btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="tel:+33746517724" class="btn phone"><i class="fas fa-phone"></i> +33 7 46 51 17 24</a>
                 </div>
             </div>
-
             <div class="image-section">
-                <img src="Photo de couverture.jpeg" alt="Jospin Tchatchou" class="profile-pic">
+                <img src="photo.jpg" alt="Jospin Tchatchou" class="profile-pic">
             </div>
-
         </div>
     </section>
-
 </body>
 </html>
-
