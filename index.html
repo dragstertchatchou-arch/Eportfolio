@@ -1,236 +1,337 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Jospin Tchatchou</title>
-  <style>
-    body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background: #f7f7f7;
-      color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon PPP - Projet Professionnel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* --- VARIABLES & RESET --- */
+        :root {
+            --primary-color: #2563eb; /* Bleu moderne */
+            --dark-bg: #0f172a;       /* Fond sombre principal */
+            --card-bg: #1e293b;       /* Fond des cartes */
+            --text-color: #f8fafc;    /* Texte clair */
+            --text-muted: #94a3b8;    /* Texte secondaire */
+            --transition: all 0.3s ease;
+        }
 
-    /* Barre de navigation */
-    nav {
-      background: #1e1e1e;
-      color: white;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      padding: 15px 10px;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth; /* Permet le défilement fluide */
+        }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 10px 18px;
-      border-radius: 5px;
-      transition: 0.3s;
-    }
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
 
-    nav a.active {
-      background: #e63946;
-      font-weight: bold;
-    }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
 
-    nav a:hover {
-      background: #e63946;
-    }
+        /* --- NAVIGATION --- */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
 
-    /* Sections */
-    section {
-      display: none;
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
 
-    section.active {
-      display: block;
-      animation: fadeIn 0.5s ease-in-out;
-    }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
 
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
+        .nav-links a {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            transition: var(--transition);
+        }
 
-    h1 {
-      color: #e63946;
-      text-align: center;
-      margin-bottom: 30px;
-    }
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary-color);
+        }
 
-    /* Blocs de contenu */
-    .bloc {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-      padding: 20px 25px;
-      margin-bottom: 25px;
-      transition: transform 0.2s ease-in-out;
-    }
+        /* --- SECTIONS GÉNÉRALES --- */
+        section {
+            padding: 100px 50px;
+            min-height: 100vh; /* Chaque section prend au moins tout l'écran */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-    .bloc:hover {
-      transform: translateY(-3px);
-    }
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+        }
 
-    .bloc h2 {
-      color: #222;
-      margin-bottom: 10px;
-    }
+        /* --- ACCUEIL (HERO) --- */
+        #home {
+            text-align: center;
+            align-items: center;
+        }
 
-    .bloc p {
-      line-height: 1.6;
-      text-align: justify;
-    }
-  </style>
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--primary-color);
+            margin-bottom: 20px;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: var(--transition);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
+        }
+
+        /* --- GRILLES (Education, Skills) --- */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: var(--transition);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+
+        .card h3 { margin-bottom: 10px; }
+        .date { color: var(--primary-color); font-size: 0.9rem; margin-bottom: 15px; display: block;}
+
+        /* --- CONTACT --- */
+        .contact-methods {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            text-align: center;
+        }
+        
+        .contact-item i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Animation simple */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Responsive Mobile */
+        @media (max-width: 768px) {
+            .navbar { padding: 15px 20px; flex-direction: column; }
+            .nav-links { margin-top: 15px; flex-wrap: wrap; justify-content: center; gap: 15px;}
+            h1 { font-size: 2.5rem; }
+        }
+    </style>
 </head>
-
 <body>
-  <nav>
-    <a href="#" class="active" onclick="showSection('accueil', this)">Accueil / Présentation personnelle</a>
-    <a href="#" onclick="showSection('parcours', this)">Parcours d’ingénierie</a>
-    <a href="#" onclick="showSection('mobilite', this)">Mobilité internationale</a>
-    <a href="#" onclick="showSection('developpement', this)">Développement durable et engagement civique</a>
-    <a href="#" onclick="showSection('sport', this)">Sport et autres activités</a>
-    <a href="#" onclick="showSection('ppp', this)">Projet Professionnel Personnel (PPP)</a>
-  </nav>
 
-  <!-- ACCUEIL -->
-  <section id="accueil" class="active">
-    <h1>Accueil / Présentation personnelle</h1>
+    <nav class="navbar">
+        <div class="logo">Mon PPP</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#education">Éducation</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <div class="bloc">
-      <h2>Qui suis-je ?</h2>
-      <p>
-        Je m’appelle Jospin Tchatchou, étudiant en Génie Électrique à l’École Polytechnique de Yaoundé.
-        Passionné par les énergies, leur évolution et leur gestion, je souhaite contribuer
-        au développement de solutions innovantes pour une meilleure qualité énergétique en Afrique.
-      </p>
-    </div>
+    <section id="home">
+        <img src="https://via.placeholder.com/200" alt="Photo de profil" class="profile-img">
+        <h1>Bonjour, je suis <span style="color:var(--primary-color)">Ton Nom</span></h1>
+        <p class="subtitle">Étudiant ingénieur & Passionné de Tech</p>
+        <a href="#contact" class="btn">Me contacter</a>
+    </section>
 
-    <div class="bloc">
-      <h2>Objectif</h2>
-      <p>
-        Mon objectif est d’intégrer la filière SEF à l’INP Toulouse, option 3EA,
-        afin de renforcer mes compétences en systèmes électriques et efficacité énergétique,
-        tout en poursuivant une carrière orientée vers la recherche et l’innovation.
-      </p>
-    </div>
-  </section>
+    <section id="about">
+        <h2>À Propos de moi</h2>
+        <div class="content">
+            <p>
+                Passionné par la technologie et l'innovation, je suis toujours prêt à relever de nouveaux défis. 
+                Mon objectif est de développer des solutions utiles et performantes.
+                <br><br>
+                (Ici tu pourras mettre ta présentation détaillée, tes motivations et ta vision professionnelle).
+            </p>
+        </div>
+    </section>
 
-  <!-- PARCOURS D’INGÉNIERIE -->
-  <section id="parcours">
-    <h1>Parcours d’ingénierie</h1>
+    <section id="education">
+        <h2>Éducation</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Ton École / Université</h3>
+                <span class="date">2023 - 2026</span>
+                <p>Diplôme d'ingénieur en informatique. Spécialisation développement web et logiciel.</p>
+            </div>
+            <div class="card">
+                <h3>Classe Préparatoire</h3>
+                <span class="date">2021 - 2023</span>
+                <p>Mathématiques, Physique et Sciences de l'ingénieur (MPSI/PSI).</p>
+            </div>
+            <div class="card">
+                <h3>Lycée</h3>
+                <span class="date">2021</span>
+                <p>Baccalauréat Scientifique, mention Très Bien.</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="bloc">
-      <h2>Formation académique</h2>
-      <p>
-        Étudiant en Génie Électrique à l’École Polytechnique de Yaoundé, j’ai acquis de solides
-        connaissances en électronique de puissance, commande des machines et efficacité énergétique.
-      </p>
-    </div>
+    <section id="experience">
+        <h2>Expérience Professionnelle</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Stagiaire Développeur</h3>
+                <span class="date">Été 2024 - Entreprise X</span>
+                <p>Développement d'une application interne en Python et React. Gestion de base de données SQL.</p>
+            </div>
+            <div class="card">
+                <h3>Projet Académique</h3>
+                <span class="date">2023 - École</span>
+                <p>Création d'un site e-commerce complet avec gestion des utilisateurs et paiements.</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="bloc">
-      <h2>Projets techniques</h2>
-      <p>
-        - Étude et modélisation de la commande vectorielle de la machine asynchrone.<br>
-        - Dimensionnement d’un hacheur série pour alimentation USB 3.0.<br>
-        - Conception d’un système de filtrage pour onduleur à découpage.
-      </p>
-    </div>
-  </section>
+    <section id="skills">
+        <h2>Compétences & Technologies</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Développement Web</h3>
+                <p>HTML, CSS, JavaScript, React, Node.js</p>
+            </div>
+            <div class="card">
+                <h3>Programmation</h3>
+                <p>Python, C, C++, Java</p>
+            </div>
+            <div class="card">
+                <h3>Outils</h3>
+                <p>Git, Docker, VS Code, Linux</p>
+            </div>
+            <div class="card">
+                <h3>Langues</h3>
+                <p>Français (Natif), Anglais (C1), Espagnol (B2)</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- MOBILITÉ INTERNATIONALE -->
-  <section id="mobilite">
-    <h1>Mobilité internationale</h1>
+    <section id="contact">
+        <h2>Me Contacter</h2>
+        <p style="text-align:center; margin-bottom: 40px; color: var(--text-muted);">
+            N'hésitez pas à me contacter pour toute opportunité ou question.
+        </p>
+        <div class="contact-methods">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <p>email@ecole.fr</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <p>+33 6 00 00 00 00</p>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <p>linkedin.com/in/ton-profil</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="bloc">
-      <h2>Ouverture à l’international</h2>
-      <p>
-        J’ambitionne de poursuivre une formation en France à l’INP Toulouse dans le cadre
-        d’un échange académique. Cette expérience me permettra de découvrir de nouvelles approches
-        d’ingénierie et de renforcer mes compétences interculturelles.
-      </p>
-    </div>
-  </section>
+    <footer>
+        <p>&copy; 2025 Ton Nom. Tous droits réservés.</p>
+    </footer>
 
-  <!-- DÉVELOPPEMENT DURABLE ET ENGAGEMENT CIVIQUE -->
-  <section id="developpement">
-    <h1>Développement durable et engagement civique</h1>
+    <script>
+        // Changement de la classe active dans le menu lors du scroll
+        const sections = document.querySelectorAll('section');
+        const navLi = document.querySelectorAll('.nav-links li a');
 
-    <div class="bloc">
-      <h2>Engagements personnels</h2>
-      <p>
-        Sensibilisé aux enjeux du développement durable, je participe à des initiatives visant
-        à promouvoir l’utilisation des énergies renouvelables et la réduction de la consommation énergétique.
-      </p>
-    </div>
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                    current = section.getAttribute('id');
+                }
+            });
 
-    <div class="bloc">
-      <h2>Projets liés à l’énergie</h2>
-      <p>
-        Étude d’optimisation de la consommation énergétique dans les installations industrielles
-        et contribution à des projets locaux de sensibilisation à l’efficacité énergétique.
-      </p>
-    </div>
-  </section>
+            navLi.forEach(a => {
+                a.classList.remove('active');
+                if (a.getAttribute('href').includes(current)) {
+                    a.classList.add('active');
+                }
+            });
+        });
+    </script>
 
-  <!-- SPORT ET AUTRES ACTIVITÉS -->
-  <section id="sport">
-    <h1>Sport et autres activités</h1>
-
-    <div class="bloc">
-      <h2>Activités sportives</h2>
-      <p>
-        Passionné de sport, je pratique régulièrement le football et le fitness.
-        Ces activités développent mon esprit d’équipe et ma discipline personnelle.
-      </p>
-    </div>
-
-    <div class="bloc">
-      <h2>Centres d’intérêt</h2>
-      <p>
-        Lecture scientifique, nouvelles technologies, et développement personnel.
-      </p>
-    </div>
-  </section>
-
-  <!-- PPP -->
-  <section id="ppp">
-    <h1>Projet Professionnel Personnel (PPP)</h1>
-
-    <div class="bloc">
-      <h2>Objectif à long terme</h2>
-      <p>
-        Devenir ingénieur-chercheur en systèmes électriques intelligents,
-        en contribuant à la modernisation et à la fiabilité des réseaux électriques africains.
-      </p>
-    </div>
-
-    <div class="bloc">
-      <h2>Motivation</h2>
-      <p>
-        Mon parcours académique et mes expériences m’ont conforté dans la volonté de mettre
-        mes compétences au service du développement énergétique durable.
-      </p>
-    </div>
-  </section>
-
-  <script>
-    function showSection(id, element) {
-      // Masquer toutes les sections
-      document.querySelectorAll("section").forEach((sec) => sec.classList.remove("active"));
-      // Supprimer la classe active de tous les liens
-      document.querySelectorAll("nav a").forEach((a) => a.classList.remove("active"));
-      // Activer la section et le lien choisis
-      document.getElementById(id).classList.add("active");
-      element.classList.add("active");
-    }
-  </script>
 </body>
 </html>
