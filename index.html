@@ -3,234 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jospin Tchatchou - Portfolio</title>
+    <title>Jospin Tchatchou - Accueil</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
-    
-    <style>
-        /* --- ESTHÉTIQUE GÉNÉRALE RENOUVELÉE --- */
-        :root {
-            --primary-color: #003366; /* Bleu foncé N7 */
-            --primary-light: #0055aa; /* Bleu plus clair pour les dégradés */
-            --accent-color: #e63946;  /* Rouge */
-            --text-color: #2c3e50;
-            --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            --white: #ffffff;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            /* Arrière-plan moderne avec un dégradé subtil */
-            background: var(--bg-gradient);
-            color: var(--text-color);
-            line-height: 1.6;
-            /* Ajout d'un motif de fond subtil (optionnel, pour un effet "tech") */
-            background-image: 
-                radial-gradient(circle at 10% 20%, rgb(240, 245, 255) 0%, transparent 20%),
-                radial-gradient(circle at 90% 80%, rgb(240, 245, 255) 0%, transparent 20%);
-            background-attachment: fixed;
-        }
-
-        /* --- BARRE DE NAVIGATION (Style "Glassmorphism") --- */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 5%;
-            /* Fond semi-transparent avec effet de flou */
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            transition: all 0.3s ease;
-        }
-
-        .logo-container img {
-            height: 55px;
-            width: auto;
-            transition: transform 0.3s;
-        }
-        .logo-container img:hover {
-            transform: scale(1.05);
-        }
-
-        /* --- SECTION HÉRO (PRINCIPALE) --- */
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            padding: 0 10%;
-            padding-top: 80px;
-        }
-
-        .hero-content {
-            display: flex;
-            align-items: center;
-            gap: 60px;
-            max-width: 1200px;
-            background: rgba(255,255,255,0.4); /* Cadre subtil autour du contenu */
-            padding: 40px;
-            border-radius: 20px;
-            backdrop-filter: blur(5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
-        }
-
-        /* Texte et Présentation */
-        .text-section { flex: 1; }
-
-        /* Nom avec effet dégradé */
-        h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(to right, var(--primary-color), var(--accent-color));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            letter-spacing: -1px;
-        }
-
-        h2 {
-            font-size: 1.6rem;
-            font-weight: 500;
-            color: var(--primary-light);
-            margin-bottom: 1.5rem;
-        }
-
-        p {
-            font-size: 1.15rem;
-            margin-bottom: 2.5rem;
-            text-align: justify;
-            color: #555;
-        }
-
-        /* Photo de profil améliorée */
-        .image-section {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            position: relative;
-        }
-
-        .profile-pic {
-            width: 380px;
-            height: 380px;
-            object-fit: cover;
-            border-radius: 50%;
-            /* Double bordure pour un effet de profondeur */
-            border: 5px solid var(--white);
-            box-shadow: 
-                0 0 0 5px var(--primary-color), /* Bordure extérieure bleue */
-                0 20px 40px rgba(0,0,0,0.25);   /* Ombre portée */
-            transition: transform 0.5s ease;
-        }
-        
-        .image-section:hover .profile-pic {
-             transform: scale(1.02) rotate(2deg);
-        }
-
-        /* --- NOUVEAUX BOUTONS RÉSEAUX SOCIAUX (ATTRATTRANTS) --- */
-        .social-links {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            padding: 14px 28px;
-            border-radius: 50px; /* Forme de pilule arrondie */
-            font-weight: 700;
-            font-size: 1rem;
-            color: var(--white);
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Effet rebond */
-            box-shadow: 0 10px 20px -10px rgba(0,0,0,0.3);
-            position: relative;
-            overflow: hidden; /* Important pour l'effet de brillance */
-            border: none;
-        }
-
-        .btn i {
-            margin-right: 10px;
-            font-size: 1.4rem;
-        }
-
-        /* Dégradés de couleurs pour les boutons */
-        .linkedin {
-            background: linear-gradient(45deg, #0077b5, #00a0dc);
-            box-shadow: 0 10px 20px -10px rgba(0, 119, 181, 0.5);
-        }
-        .email {
-            background: linear-gradient(45deg, #ea4335, #ff6b5b);
-            box-shadow: 0 10px 20px -10px rgba(234, 67, 53, 0.5);
-        }
-        .whatsapp {
-            background: linear-gradient(45deg, #25D366, #4ce483);
-            box-shadow: 0 10px 20px -10px rgba(37, 211, 102, 0.5);
-        }
-        .phone {
-            background: linear-gradient(45deg, var(--primary-color), #336699);
-            box-shadow: 0 10px 20px -10px rgba(0, 51, 102, 0.5);
-        }
-
-        /* Effets au survol des boutons */
-        .btn:hover {
-            transform: translateY(-5px) scale(1.05); /* Monte et grossit légèrement */
-            box-shadow: 0 20px 30px -10px rgba(0,0,0,0.3);
-        }
-
-        /* Effet de "Brillance" qui traverse le bouton au survol */
-        .btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%; /* Commence hors du bouton à gauche */
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(
-                120deg,
-                transparent,
-                rgba(255, 255, 255, 0.4),
-                transparent
-            );
-            transition: all 0.6s;
-        }
-
-        .btn:hover::before {
-            left: 100%; /* Traverse vers la droite */
-        }
-
-
-        /* --- RESPONSIVE (MOBILE) --- */
-        @media (max-width: 968px) {
-            .hero-content {
-                flex-direction: column-reverse;
-                text-align: center;
-                gap: 40px;
-                padding: 30px 20px;
-            }
-            h1 { font-size: 2.8rem; }
-            .profile-pic { width: 250px; height: 250px; }
-            .social-links { justify-content: center; }
-            p { text-align: center; }
-        }
-    </style>
 </head>
 <body>
 
     <nav>
         <div class="logo-container">
-            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/e/e0/Logo_INP_ENSEEIHT.svg/1200px-Logo_INP_ENSEEIHT.svg.png" alt="Logo INP ENSEEIHT">
+            <a href="index.html">
+                <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/e/e0/Logo_INP_ENSEEIHT.svg/1200px-Logo_INP_ENSEEIHT.svg.png" alt="Logo INP ENSEEIHT">
+            </a>
         </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            
+            <li class="dropdown">
+                <a href="#">Mon Parcours <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="experience.html">Formation & Expérience</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">Réalisations <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="projets.html">Projets Techniques</a>
+                </div>
+            </li>
+
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
     <section class="hero">
@@ -268,7 +74,7 @@
             </div>
 
             <div class="image-section">
-                <img src="ta-photo.jpg" alt="Jospin Tchatchou" class="profile-pic">
+                <img src="photo.jpg" alt="Jospin Tchatchou" class="profile-pic">
             </div>
 
         </div>
