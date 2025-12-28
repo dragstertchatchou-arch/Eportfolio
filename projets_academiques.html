@@ -1,0 +1,144 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Projects - Jospin Tchatchou</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        .project-card-custom { display: flex; background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 40px; transition: transform 0.3s ease; border-left: 5px solid var(--accent-color); }
+        .project-card-custom:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
+        .project-img-wrapper { flex: 0 0 35%; min-height: 250px; position: relative; }
+        .project-img-wrapper img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .project-content-wrapper { flex: 1; padding: 30px; display: flex; flex-direction: column; justify-content: center; }
+        .project-content-wrapper h3 { color: var(--primary-color); font-size: 1.5rem; margin-bottom: 10px; }
+        .project-tags { margin-bottom: 15px; }
+        .project-tags span { background-color: #e8f1f5; color: var(--primary-color); padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-right: 5px; display: inline-block; margin-bottom: 5px; }
+        @media (max-width: 768px) { .project-card-custom { flex-direction: column; } .project-img-wrapper { height: 200px; } }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <a href="index.html"><img src="INP-ENSEEIHT.png" alt="Logo INP"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" style="color:var(--accent-color)">Education <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="formation.html">Academic Background</a>
+                    <a href="projets_academiques.html">Academic Projects</a>
+                </div>
+            </li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="ppp.html">My PPP</a></li>
+            <li class="dropdown">
+                <a href="mobility.html">Mobilité & Vie <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="mobility.html#voyages">International Mobility</a>
+                    <a href="mobility.html#engagement">Civic Engagement</a>
+                    <a href="mobility.html#hobbies">Hobbies</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-container">
+        <div class="center-header">
+            <h1 class="page-title">Academic Projects</h1>
+            <p>Technical achievements combining theory and practice.</p>
+        </div>
+
+        <div class="project-card-custom">
+            <div class="project-img-wrapper">
+                <img src="projet_maison.jpg" alt="Smart Home Model">
+            </div>
+            <div class="project-content-wrapper">
+                <h3>Smart Home Model (IoT)</h3>
+                <div class="project-tags">
+                    <span><i class="fas fa-microchip"></i> Arduino</span>
+                    <span><i class="fab fa-bluetooth"></i> Bluetooth</span>
+                    <span><i class="fas fa-mobile-alt"></i> App Dev</span>
+                    <span><i class="fas fa-code"></i> C++</span>
+                </div>
+                <p style="text-align: justify; margin-bottom: 15px;">
+                    <strong>Description:</strong> Design and realization of a remote-controlled home automation model. Integration of sensors (temperature, gas, motion) and actuators (lighting, alarm) controlled by an Arduino board. Development of a dedicated mobile application for control via Bluetooth module.
+                </p>
+                <p style="text-align: justify; color: #555; font-size: 0.95rem;">
+                    <strong>Skills Acquired:</strong> This project strengthened my teamwork skills through technical task coordination. I developed skills in embedded programming, electronic circuit design, and system integration (Hardware/Software).
+                </p>
+            </div>
+        </div>
+
+        <div class="project-card-custom">
+            <div class="project-img-wrapper">
+                <img src="projet_moteur.png" alt="DIY DC Motor">
+            </div>
+            <div class="project-content-wrapper">
+                <h3>DC Motor Design</h3>
+                <div class="project-tags">
+                    <span><i class="fas fa-bolt"></i> Electromagnetism</span>
+                    <span><i class="fas fa-cogs"></i> Mechanics</span>
+                    <span><i class="fas fa-recycle"></i> DIY</span>
+                </div>
+                <p style="text-align: justify; margin-bottom: 15px;">
+                    <strong>Description:</strong> Design and assembly of a series-excited direct current motor, made from recycled materials (copper wire for winding, permanent magnets, handmade collector). The goal was to build a functional machine from scratch.
+                </p>
+                <p style="text-align: justify; color: #555; font-size: 0.95rem;">
+                    <strong>Skills Acquired:</strong> This practical realization materialized theoretical concepts of magnetism. I deepened my understanding of the internal workings of rotating machines, particularly the crucial role of the brush-collector system and electromagnetic torque creation.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
