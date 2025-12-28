@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobility & Life - Jospin Tchatchou</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <a href="index.html"><img src="INP-ENSEEIHT.png" alt="Logo INP"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Education <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="formation.html">Academic Background</a>
+                    <a href="projets_academiques.html">Academic Projects</a>
+                </div>
+            </li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="ppp.html">My PPP</a></li>
+            <li class="dropdown">
+                <a href="mobility.html" style="color:var(--accent-color);">Mobility & Life <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#voyages" onclick="switchTab('voyages')">International Mobility</a>
+                    <a href="#engagement" onclick="switchTab('engagement')">Civic Engagement</a>
+                    <a href="#hobbies" onclick="switchTab('hobbies')">Hobbies</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-container">
+        <div class="center-header">
+            <h1 class="page-title">My Horizons</h1>
+            <p>Discovery, travels, and personal passions.</p>
+        </div>
+
+        <div id="voyages" class="tab-content active-tab">
+            <h2 style="color:var(--primary-color); margin-bottom:20px;">International Mobility</h2>
+            <div class="slider-container">
+                <div class="slide active"><img src="yaounde.jpg" alt="Yaoundé"><div class="slide-caption">Yaoundé - The City of Seven Hills</div></div>
+                <div class="slide"><img src="ouest.jpg" alt="West Cameroon"><div class="slide-caption">West Cameroon - Land of Traditions</div></div>
+                <div class="slide"><img src="toulouse.jpg" alt="Toulouse"><div class="slide-caption">Toulouse - The Pink City</div></div>
+            </div>
+            <div class="city-grid">
+                <div class="city-card"><img src="yaounde.jpg" alt="Yaoundé" class="city-img"><div class="city-content"><h3>Yaoundé (Cameroon)</h3><p>Political capital, where I forged my scientific foundations at the Polytechnic School.</p></div></div>
+                <div class="city-card"><img src="ouest.jpg" alt="West" class="city-img"><div class="city-content"><h3>West Cameroon</h3><p>My region of origin. Rich in culture, traditional chiefdoms, and green landscapes.</p></div></div>
+                <div class="city-card"><img src="toulouse.jpg" alt="Toulouse" class="city-img"><div class="city-content"><h3>Toulouse (France)</h3><p>My current place of living. Aerospace capital, vibrant student city.</p></div></div>
+            </div>
+        </div>
+
+        <div id="engagement" class="tab-content">
+            <h2 style="color:var(--primary-color); margin-bottom:20px;">Civic Engagement</h2>
+            <div class="school-card">
+                <div class="school-logo-container">
+                    <img src="logo_cop1.png" alt="Logo COP1" style="width:100%; height:100%; object-fit:contain;">
+                </div>
+                <div class="school-info">
+                    <h3>Volunteering - COP1</h3>
+                    <p>I am currently in the process of joining the COP1 association as a volunteer for food product distribution to support students in need.</p>
+                </div>
+            </div>
+            
+            <div style="text-align:center; margin-top:80px; padding:40px; background:#fff; border-radius:15px; box-shadow:0 10px 30px rgba(0,0,0,0.05);">
+                <h3 style="margin-bottom:20px;">My Psychological Profile (ESFJ-A)</h3>
+                <p style="margin-bottom:30px;">Behavioral and professional analysis.</p>
+                <a href="https://www.16personalities.com/fr/résultats/esfj-a/m/fm13lszel" target="_blank" class="btn-psycho">
+                    <i class="fas fa-brain"></i> See Psychometric Test
+                </a>
+            </div>
+        </div>
+
+        <div id="hobbies" class="tab-content">
+            <h2 style="color:var(--primary-color); margin-bottom:20px;">Interests & Hobbies</h2>
+            <div class="hobby-grid">
+                <div class="hobby-card" style="background-image: url('anime.jpeg');"><span class="hobby-title-static">Mangas & Animes</span><div class="hobby-overlay"><h3>Anime Passion</h3><p>Inspiration for perseverance.</p></div></div>
+                <div class="hobby-card" style="background-image: url('livre.jpeg');"><span class="hobby-title-static">Literature</span><div class="hobby-overlay"><h3>Reading</h3><p>Novels and personal development.</p></div></div>
+                <div class="hobby-card" style="background-image: url('foot.jpg');"><span class="hobby-title-static">Football</span><div class="hobby-overlay"><h3>Football</h3><p>Team spirit and strategy.</p></div></div>
+                <div class="hobby-card" style="background-image: url('film.jpg');"><span class="hobby-title-static">Cinema</span><div class="hobby-overlay"><h3>Movies & Series</h3><p>Sci-Fi and Thrillers.</p></div></div>
+                <div class="hobby-card" style="background-image: url('escalade.jpeg');"><span class="hobby-title-static">Climbing</span><div class="hobby-overlay"><h3>Climbing</h3><p>Self-transcendence and focus.</p></div></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function handleRouting() {
+            const hash = window.location.hash.substring(1);
+            const activeId = hash || 'voyages';
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active-tab'));
+            const target = document.getElementById(activeId);
+            if (target) target.classList.add('active-tab');
+        }
+        function switchTab(tabId) { history.pushState(null, null, '#' + tabId); handleRouting(); }
+        window.addEventListener('load', handleRouting); window.addEventListener('hashchange', handleRouting);
+        let slides = document.querySelectorAll('.slide'); let currentSlide = 0;
+        function nextSlide() { if(document.getElementById('voyages').classList.contains('active-tab')) { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); } }
+        setInterval(nextSlide, 4000);
+    </script>
+</body>
+</html>

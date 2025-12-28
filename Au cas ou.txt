@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jospin Tchatchou - Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body><nav>
+        <div class="logo-container">
+            <a href="index.html"><img src="INP-ENSEEIHT.png" alt="Logo INP"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#">Éducation <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="formation.html">Parcours Académique</a>
+                    <a href="projets_academiques.html">Projets Académiques</a>
+                </div>
+            </li>
+            <li><a href="experience.html">Expérience Pro</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            
+            <li><a href="ppp.html">Mon PPP</a></li>
+
+            <li class="dropdown">
+                <a href="mobility.html">Mobilité & Vie <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="mobility.html#voyages">Mobilité Internationale</a>
+                    <a href="mobility.html#engagement">Engagement Civique</a>
+                    <a href="mobility.html#hobbies">Hobbies</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="text-section">
+                <h1>Jospin Tchatchou</h1>
+                <h2>Ingénieur en devenir | Énergie & Systèmes Électriques</h2>
+                <p>
+                    Bonjour, je suis <strong>Jospin Tchatchou</strong>.<br><br>
+                    Issu de l'<strong>École Nationale Supérieure Polytechnique de Yaoundé</strong>, je poursuis actuellement un double diplôme à l'<strong>INP-ENSEEIHT</strong> (Toulouse). <br><br>
+                    Spécialisé dans le parcours <em>Énergie et Systèmes Électriques du Futur</em>, je suis passionné par les réseaux électriques intelligents et l'efficacité énergétique.
+                </p>
+                
+                <div style="margin-bottom: 30px;">
+                    <a href="profil.html" class="btn-main">Découvrir mon Profil <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/jospin-tchatchou" target="_blank" class="btn linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="mailto:jospinfils.tchatchounzigna@etu.inp-n7.fr" class="btn email"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="https://wa.me/33746517724" target="_blank" class="btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="tel:+33746517724" class="btn phone"><i class="fas fa-phone"></i> +33 7 46 51 17 24</a>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="Photo de couverture.jpeg" alt="Jospin Tchatchou" class="profile-pic">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Profil - Jospin Tchatchou</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <a href="index.html"><img src="INP-ENSEEIHT.png" alt="Logo INP"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#">Éducation <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="formation.html">Parcours Académique</a>
+                    <a href="projets_academiques.html">Projets Académiques</a>
+                </div>
+            </li>
+            <li><a href="experience.html">Expérience Pro</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            <li class="dropdown">
+                <a href="mobility.html">Mobilité & Vie <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="mobility.html#voyages">Mobilité Internationale</a>
+                    <a href="mobility.html#engagement">Engagement Civique</a>
+                    <a href="mobility.html#hobbies">Hobbies</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div style="padding: 120px 10% 50px; max-width: 1300px; margin: 0 auto;">
+        <div style="text-align: center; margin-bottom: 60px;">
+            <h1 style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px;">À propos de moi</h1>
+            <p style="max-width: 800px; margin: 0 auto 30px; font-size: 1.1rem; line-height: 1.8;">
+                Je me nomme <strong>Jospin Tchatchou</strong>. J'ai étudié précédemment à l'<strong>École Nationale Supérieure Polytechnique de Yaoundé</strong> et je suis actuellement en double diplomation à l'<strong>INP - ENSEEIHT</strong>. <br>
+                Je suis le parcours <em>Énergie et Systèmes Électriques du Futur</em>. Je suis passionné par les réseaux électriques, la conversion d'énergie et l'efficacité énergétique des systèmes.
+            </p>
+            <a href="Mon_CV_Jospin.pdf" target="_blank" class="btn-cv"><i class="fas fa-file-download"></i> Télécharger mon CV</a>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="icon-box"><i class="fas fa-rocket"></i></div>
+                <h3>Aspirations Pro</h3>
+                <p>Je souhaite contribuer activement à la transition énergétique en participant à des projets innovants de grande envergure.</p>
+            </div>
+            <div class="info-card">
+                <div class="icon-box"><i class="fas fa-briefcase"></i></div>
+                <h3>Objectif de Carrière</h3>
+                <p>Devenir un ingénieur expert en systèmes électriques, capable de piloter des projets complexes.</p>
+            </div>
+            <div class="info-card">
+                <div class="icon-box"><i class="fas fa-bolt"></i></div>
+                <h3>Ma Spécialisation</h3>
+                <p>Je me spécialise dans les <strong>Réseaux Électriques Intelligents (Smart Grids)</strong> et l'électronique de puissance.</p>
+            </div>
+            <div class="info-card">
+                <div class="icon-box"><i class="fas fa-graduation-cap"></i></div>
+                <h3>Parcours Actuel</h3>
+                <p>En formation d'ingénieur à l'ENSEEIHT (Toulouse), je consolide mes acquis théoriques par des projets pratiques.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation - Jospin Tchatchou</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+ <nav>
+        <div class="logo-container">
+            <a href="index.html"><img src="INP-ENSEEIHT.png" alt="Logo INP"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#">Éducation <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="formation.html">Parcours Académique</a>
+                    <a href="projets_academiques.html">Projets Académiques</a>
+                </div>
+            </li>
+            <li><a href="experience.html">Expérience Pro</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            
+            <li><a href="ppp.html">Mon PPP</a></li>
+
+            <li class="dropdown">
+                <a href="mobility.html">Mobilité & Vie <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="mobility.html#voyages">Mobilité Internationale</a>
+                    <a href="mobility.html#engagement">Engagement Civique</a>
+                    <a href="mobility.html#hobbies">Hobbies</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-container">
+        <div class="center-header">
+            <h1 class="page-title">Parcours Académique</h1>
+            <p>Ma formation d'excellence en ingénierie électrique.</p>
+        </div>
+
+        <div class="school-card">
+            <div class="school-logo-container">
+                <img src="INP-ENSEEIHT.png" alt="Logo N7">
+            </div>
+            <div class="school-info">
+                <span class="school-date">Septembre 2025 (Double Diplôme)</span>
+                <h3>INP - ENSEEIHT (Toulouse)</h3>
+                <h4>Diplôme d'Ingénieur - Énergie & Fluides</h4>
+                <p>
+                    <strong>Parcours :</strong> Énergie et Systèmes Électriques du Futur.<br>
+                    <strong>Spécialisation visée :</strong> Conversion d'Énergie et Réseaux Électriques (CERE).<br>
+                    Approfondissement en électronique de puissance avancée et gestion des réseaux intelligents.
+                </p>
+            </div>
+        </div>
+
+        <div class="school-card">
+            <div class="school-logo-container">
+                <img src="logo_enspy.png" alt="Logo ENSPY">
+            </div>
+            <div class="school-info">
+                <span class="school-date">Septembre 2021 - Juin 2025</span>
+                <h3>École Nationale Supérieure Polytechnique de Yaoundé</h3>
+                <h4>Cycle Ingénieur - Génie Électrique</h4>
+                <p>
+                    <strong>Cycle Ingénieur (1ère et 2ème année) :</strong> Intégration du département Génie Électrique. Formation approfondie en électrotechnique, automatisme et réseaux.<br>
+                    <strong>Classes Préparatoires (2 ans) :</strong> Acquisition de bases solides en Mathématiques Supérieures et Sciences Physiques pour l'ingénieur.
+                </p>
+            </div>
+        </div>
+
+        <div class="school-card">
+            <div class="school-logo-container">
+                <img src="logo_uy1.png" alt="Logo UY1">
+            </div>
+            <div class="school-info">
+                <span class="school-date">Septembre 2020 - Mai 2021</span>
+                <h3>Université de Yaoundé 1</h3>
+                <h4>Faculté des Sciences - Mathématiques</h4>
+                <p>
+                    Validation des fondamentaux en algèbre, analyse et probabilités.<br>
+                    Passerelle vers les concours d'ingénierie.
+                </p>
+            </div>
+        </div>
+
+        <div class="school-card">
+            <div class="school-logo-container">
+                <img src="logo_lycee.jpg" alt="Lycée">
+            </div>
+            <div class="school-info">
+                <span class="school-date">Juin 2020</span>
+                <h3>Lycée Classique de Nkolbisson</h3>
+                <h4>Baccalauréat Scientifique (Série C)</h4>
+                <p>
+                    Obtenu avec <strong>Mention Bien</strong>.<br>
+                                   </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets Académiques - Jospin Tchatchou</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        .project-card-custom {
+            display: flex;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            transition: transform 0.3s ease;
+            border-left: 5px solid var(--accent-color); /* Bordure rouge pour différencier */
+        }
+
+        .project-card-custom:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        /* Conteneur de l'image (Gauche) */
+        .project-img-wrapper {
+            flex: 0 0 35%; /* Prend 35% de la largeur */
+            min-height: 250px;
+            position: relative;
+        }
+
+        .project-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* L'image remplit tout l'espace sans déformation */
+            display: block;
+        }
+
+        /* Conteneur du texte (Droite) */
+        .project-content-wrapper {
+            flex: 1;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .project-content-wrapper h3 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .project-tags {
+            margin-bottom: 15px;
+        }
+
+        .project-tags span {
+            background-color: #e8f1f5;
+            color: var(--primary-color);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-right: 5px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        /* Responsive Mobile */
+        @media (max-width: 768px) {
+            .project-card-custom {
+                flex-direction: column;
+            }
+            .project-img-wrapper {
+                height: 200px; /* Hauteur fixe sur mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+   <nav>
+        <div class="logo-container">
+            <a href="index.html"><img src="INP-ENSEEIHT.png" alt="Logo INP"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#">Éducation <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="formation.html">Parcours Académique</a>
+                    <a href="projets_academiques.html">Projets Académiques</a>
+                </div>
+            </li>
+            <li><a href="experience.html">Expérience Pro</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            
+            <li><a href="ppp.html">Mon PPP</a></li>
+
+            <li class="dropdown">
+                <a href="mobility.html">Mobilité & Vie <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="mobility.html#voyages">Mobilité Internationale</a>
+                    <a href="mobility.html#engagement">Engagement Civique</a>
+                    <a href="mobility.html#hobbies">Hobbies</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-container">
+        <div class="center-header">
+            <h1 class="page-title">Projets Académiques</h1>
+            <p>Réalisations techniques alliant théorie et pratique.</p>
+        </div>
+
+        <div class="project-card-custom">
+            <div class="project-img-wrapper">
+                <img src="projet_maison.jpg" alt="Maquette Maison Intelligente">
+            </div>
+            <div class="project-content-wrapper">
+                <h3>Maquette Maison Intelligente (IoT)</h3>
+                
+                <div class="project-tags">
+                    <span><i class="fas fa-microchip"></i> Arduino</span>
+                    <span><i class="fab fa-bluetooth"></i> Bluetooth</span>
+                    <span><i class="fas fa-mobile-alt"></i> App Dev</span>
+                    <span><i class="fas fa-code"></i> C++</span>
+                </div>
+
+                <p style="text-align: justify; margin-bottom: 15px;">
+                    <strong>Description :</strong> Conception et réalisation complète d'une maquette domotique pilotable à distance. Intégration de capteurs (température, gaz, mouvement) et d'actionneurs (éclairage, alarme) pilotés par une carte Arduino. Développement d'une application mobile dédiée pour le contrôle via module Bluetooth.
+                </p>
+                <p style="text-align: justify; color: #555; font-size: 0.95rem;">
+                    <strong>Compétences acquises :</strong> Ce projet a renforcé mon esprit d'équipe à travers la coordination des tâches techniques. Il m'a permis de développer mes compétences en programmation embarquée, en conception de circuits électroniques et en intégration système (Hardware/Software).
+                </p>
+            </div>
+        </div>
+
+        <div class="project-card-custom">
+            <div class="project-img-wrapper">
+                <img src="projet_moteur.png" alt="Moteur DC DIY">
+            </div>
+            <div class="project-content-wrapper">
+                <h3>Conception d'un Moteur à Courant Continu</h3>
+
+                <div class="project-tags">
+                    <span><i class="fas fa-bolt"></i> Électromagnétisme</span>
+                    <span><i class="fas fa-cogs"></i> Mécanique</span>
+                    <span><i class="fas fa-recycle"></i> DIY</span>
+                </div>
+
+                <p style="text-align: justify; margin-bottom: 15px;">
+                    <strong>Description :</strong> Conception et assemblage d'un moteur à courant continu à excitation série, réalisé à partir de matériaux de récupération (fils de cuivre pour le bobinage, aimants permanents, collecteur artisanal). L'objectif était de construire une machine fonctionnelle en partant de zéro.
+                </p>
+                <p style="text-align: justify; color: #555; font-size: 0.95rem;">
+                    <strong>Compétences acquises :</strong> Cette réalisation pratique a permis de matérialiser les concepts théoriques du magnétisme. J'ai pu approfondir ma compréhension du fonctionnement interne des machines tournantes, notamment le rôle crucial du système balais-collecteur et la création du couple électromagnétique par interaction stator/rotor.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expérience Pro - Jospin Tchatchou</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <a href="index.html"><img src="INP-ENSEEIHT.png" alt="Logo INP"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#">Éducation <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="formation.html">Parcours Académique</a>
+                    <a href="projets_academiques.html">Projets Académiques</a>
+                </div>
+            </li>
+            <li><a href="experience.html">Expérience Pro</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            
+            <li><a href="ppp.html">Mon PPP</a></li>
+
+            <li class="dropdown">
+                <a href="mobility.html">Mobilité & Vie <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="mobility.html#voyages">Mobilité Internationale</a>
+                    <a href="mobility.html#engagement">Engagement Civique</a>
+                    <a href="mobility.html#hobbies">Hobbies</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-container">
+        <div class="center-header">
+            <h1 class="page-title">Expérience Professionnelle</h1>
+            <p>Mes stages et missions en entreprise.</p>
+        </div>
+
+        <div class="school-card">
+            <div class="school-logo-container">
+                <img src="logo_eneo.png" alt="Logo ENEO">
+            </div>
+            
+            <div class="school-info">
+                <div style="display:flex; justify-content:space-between; flex-wrap:wrap; margin-bottom:10px;">
+                    <span class="school-date"><i class="far fa-calendar-alt"></i> Juil. 2025 - Sept. 2025 (03 mois)</span>
+                    <span style="color:#666; font-style:italic;"><i class="fas fa-map-marker-alt"></i> Cameroun</span>
+                </div>
+                
+                <h3>ENEO CAMEROUN (Équivalent ENEDIS)</h3>
+                <h4>Stage d’instrumentation</h4>
+                <p style="color:var(--primary-color); font-weight:600; margin-bottom:10px;">
+                    Direction de Maintenance et d’Exploitation des Postes Électriques
+                </p>
+
+                <ul class="task-list">
+                    <li>Participation à la maintenance préventive et corrective des postes HTA, transformateurs et appareillages de coupure.</li>
+                    <li>Réalisation des liaisons électriques entre transformateurs et tableaux de distribution.</li>
+                    <li>Contribution au diagnostic des dysfonctionnements électriques et à la mise en conformité des installations.</li>
+                    <li>Observation des procédés de mise sous tension, consignation et contrôle d’isolement.</li>
+                </ul>
+
+                <div class="result-box">
+                    <strong><i class="fas fa-trophy"></i> Résultat :</strong> Renforcement de la fiabilité des équipements et compréhension approfondie des architectures de réseaux électriques.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+C'est une très bonne idée d'ajouter les langues, c'est indispensable dans un CV d'ingénieur.
+
+J'ai ajouté un bloc **"Langues"** dans la colonne de gauche (pour équilibrer avec la colonne de droite). J'ai conservé exactement le même style graphique (barres de progression), mais j'ai remplacé les pourcentages par le niveau textuel (Maternelle, Intermédiaire, Débutant) pour que ce soit plus clair.
+
+Voici le code complet et mis à jour pour **`skills.html`** :
+
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences - Jospin Tchatchou</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <a href="index.html"><img src="INP-ENSEEIHT.png" alt="Logo INP"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#">Éducation <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="formation.html">Parcours Académique</a>
+                    <a href="projets_academiques.html">Projets Académiques</a>
+                </div>
+            </li>
+            <li><a href="experience.html">Expérience Pro</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            
+            <li><a href="ppp.html">Mon PPP</a></li>
+
+            <li class="dropdown">
+                <a href="mobility.html">Mobilité & Vie <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="mobility.html#voyages">Mobilité Internationale</a>
+                    <a href="mobility.html#engagement">Engagement Civique</a>
+                    <a href="mobility.html#hobbies">Hobbies</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="page-container">
+        
+        <div class="center-header">
+            <h1 class="page-title">Mes Compétences</h1>
+            <p>Mon arsenal technique et mes qualités humaines.</p>
+        </div>
+
+        <h2 style="text-align:center; color:var(--primary-color); margin-bottom:30px;">Qualités Humaines (Soft Skills)</h2>
+        <div class="soft-skills-grid">
+            
+            <div class="circular-skill">
+                <i class="fas fa-users" style="font-size:2rem; margin-bottom:10px; color:var(--accent-color);"></i>
+                <span>Esprit d'Équipe</span>
+            </div>
+
+            <div class="circular-skill">
+                <i class="fas fa-lightbulb" style="font-size:2rem; margin-bottom:10px; color:var(--accent-color);"></i>
+                <span>Créativité</span>
+            </div>
+
+            <div class="circular-skill">
+                <i class="fas fa-brain" style="font-size:2rem; margin-bottom:10px; color:var(--accent-color);"></i>
+                <span>Résolution</span>
+            </div>
+
+            <div class="circular-skill">
+                <i class="fas fa-comments" style="font-size:2rem; margin-bottom:10px; color:var(--accent-color);"></i>
+                <span>Communication</span>
+            </div>
+            
+            <div class="circular-skill">
+                <i class="fas fa-sync-alt" style="font-size:2rem; margin-bottom:10px; color:var(--accent-color);"></i>
+                <span>Adaptabilité</span>
+            </div>
+        </div>
+
+        <hr style="margin: 60px 0; border:0; border-top:1px solid #ddd;">
+
+        <h2 style="text-align:center; color:var(--primary-color); margin-bottom:40px;">Compétences Techniques</h2>
+        
+        <div class="skills-section">
+            
+            <div class="skills-column">
+                
+                <div class="skills-category">
+                    <h3><i class="fas fa-drafting-compass"></i> Conception & CAO</h3>
+                    
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>AutoCAD</span> <span>85%</span></div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:85%"></div></div>
+                    </div>
+                    
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>Caneco BT</span> <span>75%</span></div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:75%"></div></div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fas fa-microchip"></i> Simulation Électrique</h3>
+                    
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>PSIM</span> <span>90%</span></div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:90%"></div></div>
+                    </div>
+                    
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>PLECS</span> <span>80%</span></div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:80%"></div></div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fas fa-language"></i> Langues</h3>
+                    
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>Français</span> <span>Langue Maternelle</span></div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:100%"></div></div>
+                    </div>
+                    
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>Anglais</span> <span>Intermédiaire</span></div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:70%"></div></div>
+                    </div>
+
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>Espagnol</span> <span>Débutant</span></div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:30%"></div></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="skills-column">
+
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Langages</h3>
+                    
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>Python</span> <span>80%</span></div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:80%"></div></div>
+                    </div>
+                    
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>Langage C</span> <span>70%</span></div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:70%"></div></div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fas fa-laptop"></i> Suite Office</h3>
+                    
+                    <div class="skill-bar-container">
+                        <div class="skill-info">
+                            <span><i class="fas fa-file-excel" style="color:#217346;"></i> Excel (Avancé)</span> 
+                            <span>95%</span>
+                        </div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:95%; background:#217346;"></div></div>
+                    </div>
+                    
+                    <div class="skill-bar-container">
+                        <div class="skill-info">
+                            <span><i class="fas fa-file-word" style="color:#2b579a;"></i> Word</span> 
+                            <span>95%</span>
+                        </div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:95%; background:#2b579a;"></div></div>
+                    </div>
+
+                    <div class="skill-bar-container">
+                        <div class="skill-info">
+                            <span><i class="fas fa-file-powerpoint" style="color:#d24726;"></i> PowerPoint</span> 
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar-bg"><div class="progress-bar-fill" style="width:90%; background:#d24726;"></div></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+```
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon PPP - Jospin Tchatchou</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <a href="index.html"><img src="INP-ENSEEIHT.png" alt="Logo INP"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#">Éducation <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="formation.html">Parcours Académique</a>
+                    <a href="projets_academiques.html">Projets Académiques</a>
+                </div>
+            </li>
+            <li><a href="experience.html">Expérience Pro</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            
+            <li><a href="ppp.html" style="color:var(--accent-color);">Mon PPP</a></li>
+
+            <li class="dropdown">
+                <a href="mobility.html">Mobilité & Vie <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="mobility.html#voyages">Mobilité Internationale</a>
+                    <a href="mobility.html#engagement">Engagement Civique</a>
+                    <a href="mobility.html#hobbies">Hobbies</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-container">
+        
+        <div class="center-header">
+            <h1 class="page-title">Projet Professionnel Personnel</h1>
+            <p>Construction de ma carrière et rencontres inspirantes.</p>
+        </div>
+
+        <div style="text-align:center; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-top: 5px solid var(--primary-color); margin-bottom: 60px;">
+            <i class="fas fa-file-pdf" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 20px;"></i>
+            <h3 style="color: var(--primary-color); margin-bottom: 15px;">Mon Rapport PPP Complet</h3>
+            <p style="max-width: 600px; margin: 0 auto 30px; color: #555;">
+                Retrouvez ici le document détaillé de mon Projet Professionnel Personnel, incluant mon bilan de compétences, mes analyses sectorielles et mon plan d'action à court et moyen terme.
+            </p>
+            <a href="Mon_PPP.pdf" target="_blank" class="btn-main">
+                <i class="fas fa-download"></i> Télécharger mon PPP
+            </a>
+        </div>
+
+        <h2 style="color:var(--primary-color); margin-bottom:30px; border-left: 5px solid var(--accent-color); padding-left: 15px;">
+            Rencontres My Job Glasses
+        </h2>
+
+        <div style="background: #e8f1f5; padding: 25px; border-radius: 10px; margin-bottom: 30px;">
+            <p style="text-align: justify;">
+                Dans le cadre de la construction de mon projet, j'ai échangé avec trois professionnels aux parcours distincts. 
+                <strong>Cette sélection n'est pas un hasard :</strong> elle reflète ma vision d'une carrière évolutive. 
+                Je projette d'abord de consolider mon expertise technique en tant qu'<strong>Ingénieur</strong> (comme Angelo), 
+                pour évoluer ensuite vers la <strong>Gestion de Projet</strong> (comme Marc), 
+                tout en gardant un lien fort avec l'innovation et la <strong>Recherche</strong> (Enseignant-Chercheur).
+            </p>
+        </div>
+
+        <div style="margin-bottom: 40px; text-align: center;">
+            <img src="capture_myjobglasses.jpg" alt="Mes rendez-vous My Job Glasses" 
+                 style="width: 100%; max-width: 800px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <p style="font-size: 0.8rem; color: #777; margin-top: 10px;"><em>Capture d'écran de mes échanges validés sur la plateforme.</em></p>
+        </div>
+
+        <div class="school-card">
+            <div class="school-logo-container">
+                <i class="fas fa-hard-hat" style="font-size: 2rem; color: var(--primary-color);"></i>
+            </div>
+            <div class="school-info">
+                <span class="school-date">Référent Technique - ENGIE</span>
+                <h3>Angelo</h3>
+                <p><strong>L'inspiration technique :</strong> Angelo m'a partagé son quotidien d'ingénieur terrain et référent. Son parcours m'a conforté dans ma volonté de commencer par maîtriser la technique et les enjeux opérationnels de l'énergie avant de prétendre à des postes de direction.</p>
+            </div>
+        </div>
+
+        <div class="school-card">
+            <div class="school-logo-container">
+                <i class="fas fa-tasks" style="font-size: 2rem; color: var(--primary-color);"></i>
+            </div>
+            <div class="school-info">
+                <span class="school-date">Chef de Projet - EDF</span>
+                <h3>Marc</h3>
+                <p><strong>L'aspiration managériale :</strong> Avec Marc, j'ai découvert la dimension gestion, budget et management d'équipe. C'est l'étape logique que je vise après quelques années d'expérience : piloter des projets d'envergure chez un grand acteur comme EDF.</p>
+            </div>
+        </div>
+
+        <div class="school-card">
+            <div class="school-logo-container">
+                <i class="fas fa-university" style="font-size: 2rem; color: var(--primary-color);"></i>
+            </div>
+            <div class="school-info">
+                <span class="school-date">Recherche & Développement</span>
+                <h3>Enseignant Chercheur</h3>
+                <p><strong>L'innovation continue :</strong> Cet échange m'a rappelé l'importance de la veille technologique. Même en entreprise, je souhaite garder cet esprit de recherche pour proposer des solutions innovantes face aux défis énergétiques de demain.</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <p style="margin-bottom: 15px; font-weight: bold;">Preuve de réalisation des entretiens :</p>
+            <a href="Certificat_MJG.pdf" target="_blank" class="btn-cv" style="background: #27ae60;">
+                <i class="fas fa-certificate"></i> Télécharger mon Certificat My Job Glasses
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mobilité & Vie - Jospin Tchatchou</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav>
+        <div class="logo-container">
+            <a href="index.html"><img src="INP-ENSEEIHT.png" alt="Logo INP"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#">Éducation <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="formation.html">Parcours Académique</a>
+                    <a href="projets_academiques.html">Projets Académiques</a>
+                </div>
+            </li>
+            <li><a href="experience.html">Expérience Pro</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            
+            <li><a href="ppp.html">Mon PPP</a></li>
+
+            <li class="dropdown">
+                <a href="mobility.html">Mobilité & Vie <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="mobility.html#voyages">Mobilité Internationale</a>
+                    <a href="mobility.html#engagement">Engagement Civique</a>
+                    <a href="mobility.html#hobbies">Hobbies</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="page-container">
+
+        
+
+        <div class="center-header">
+
+            <h1 class="page-title">Mes Horizons</h1>
+
+            <p>Découverte, voyages et passions personnelles.</p>
+
+        </div>
+
+
+
+        <div id="voyages" class="tab-content active-tab">
+
+            <h2 style="color:var(--primary-color); margin-bottom:20px;">Mobilité Internationale</h2>
+
+            
+
+            <div class="slider-container">
+
+                <div class="slide active"><img src="yaounde.jpg" alt="Yaoundé"><div class="slide-caption">Yaoundé - La ville aux sept collines</div></div>
+
+                <div class="slide"><img src="ouest.jpg" alt="Ouest Cameroun"><div class="slide-caption">Ouest Cameroun - Terre de traditions</div></div>
+
+                <div class="slide"><img src="toulouse.jpg" alt="Toulouse"><div class="slide-caption">Toulouse - La ville rose</div></div>
+
+            </div>
+
+
+
+            <div class="city-grid">
+
+                <div class="city-card">
+
+                    <img src="yaounde.jpg" alt="Yaoundé" class="city-img">
+
+                    <div class="city-content">
+
+                        <h3>Yaoundé (Cameroun)</h3>
+
+                        <p>Capitale politique, c'est là que j'ai forgé mes bases scientifiques à l'école polytechnique.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="city-card">
+
+                    <img src="ouest.jpg" alt="Ouest" class="city-img">
+
+                    <div class="city-content">
+
+                        <h3>Ouest Cameroun</h3>
+
+                        <p>Ma région d'origine. Une région riche en culture, chefferies traditionnelles et paysages verdoyants.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="city-card">
+
+                    <img src="toulouse.jpg" alt="Toulouse" class="city-img">
+
+                    <div class="city-content">
+
+                        <h3>Toulouse (France)</h3>
+
+                        <p>Mon lieu de vie actuel. Capitale de l'aéronautique, ville étudiante vibrante.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div id="engagement" class="tab-content">
+
+            <h2 style="color:var(--primary-color); margin-bottom:20px;">Engagement Civique</h2>
+
+            <div class="school-card">
+
+                <div class="school-logo-container"><i class="fas fa-hands-helping" style="font-size:2rem; color:var(--primary-color);"></i></div>
+
+                <div class="school-info">
+
+                    <h3>Bénévolat et Vie Associative</h3>
+
+                    <p>Membre actif d'association étudiante. Participation à l'organisation d'événements culturels et scientifiques au sein de l'ENSPY et de l'N7.</p>
+
+                </div>
+
+            </div>
+
+            
+
+             <div style="text-align:center; margin-top:80px; padding:40px; background:#fff; border-radius:15px; box-shadow:0 10px 30px rgba(0,0,0,0.05);">
+
+                <h3 style="margin-bottom:20px;">Mon Profil Psychologique</h3>
+
+                <p style="margin-bottom:30px;">Analyse comportementale et professionnelle.</p>
+
+                <a href="#" class="btn-psycho"><i class="fas fa-brain"></i> Voir mon Test Psychométrique</a>
+
+            </div>
+
+        </div>
+
+
+
+        <div id="hobbies" class="tab-content">
+
+            <h2 style="color:var(--primary-color); margin-bottom:20px;">Centres d'Intérêt & Hobbies</h2>
+
+            <div class="hobby-grid">
+
+                <div class="hobby-card" style="background-image: url('anime.jpg');">
+
+                    <span class="hobby-title-static">Mangas & Animes</span>
+
+                    <div class="hobby-overlay">
+
+                        <h3>Passion Anime</h3>
+
+                        <p>Une source d'inspiration pour la persévérance.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="hobby-card" style="background-image: url('livre.jpg');">
+
+                    <span class="hobby-title-static">Littérature</span>
+
+                    <div class="hobby-overlay">
+
+                        <h3>Lecture</h3>
+
+                        <p>Romans et développement personnel.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="hobby-card" style="background-image: url('foot.jpg');">
+
+                    <span class="hobby-title-static">Football</span>
+
+                    <div class="hobby-overlay">
+
+                        <h3>Football</h3>
+
+                        <p>Esprit d'équipe et stratégie.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="hobby-card" style="background-image: url('film.jpg');">
+
+                    <span class="hobby-title-static">Cinéma</span>
+
+                    <div class="hobby-overlay">
+
+                        <h3>Films & Séries</h3>
+
+                        <p>Science-fiction et Thrillers.</p>
+
+                    </div>
+
+                </div>
+
+              <div class="hobby-card" style="background-image: url('escalade.jpg');">
+    <span class="hobby-title-static">Escalade</span>
+    <div class="hobby-overlay">
+        <h3>Escalade</h3>
+        <p>Dépassement de soi et concentration.</p>
+    </div>
+</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <script>
+
+        // --- 1. GESTION DES ONGLETS (TABS) ---
+
+        function handleRouting() {
+
+            // Récupère le #mot dans l'URL (ex: #hobbies)
+
+            const hash = window.location.hash.substring(1);
+
+            
+
+            // Si pas de hash, on affiche 'voyages' par défaut
+
+            const activeId = hash || 'voyages';
+
+
+
+            // On cache tout
+
+            document.querySelectorAll('.tab-content').forEach(el => {
+
+                el.classList.remove('active-tab');
+
+            });
+
+
+
+            // On affiche celui qui correspond
+
+            const target = document.getElementById(activeId);
+
+            if (target) {
+
+                target.classList.add('active-tab');
+
+            }
+
+        }
+
+
+
+        // Fonction pour changer manuellement (clic direct)
+
+        function switchTab(tabId) {
+
+            // Met à jour l'URL sans recharger
+
+            history.pushState(null, null, '#' + tabId);
+
+            handleRouting();
+
+        }
+
+
+
+        // Écouteurs d'événements (Chargement page + Changement URL)
+
+        window.addEventListener('load', handleRouting);
+
+        window.addEventListener('hashchange', handleRouting);
+
+
+
+
+
+        // --- 2. GESTION DU SLIDER AUTOMATIQUE ---
+
+        let slides = document.querySelectorAll('.slide');
+
+        let currentSlide = 0;
+
+
+
+        function nextSlide() {
+
+            // Vérifie qu'on est sur l'onglet Voyages, sinon inutile de changer l'image
+
+            if(document.getElementById('voyages').classList.contains('active-tab')) {
+
+                slides[currentSlide].classList.remove('active');
+
+                currentSlide = (currentSlide + 1) % slides.length;
+
+                slides[currentSlide].classList.add('active');
+
+            }
+
+        }
+
+        setInterval(nextSlide, 4000);
+
+    </script>
+
+</body>
+
+</html> 
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Jospin Tchatchou</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <a href="index.html"><img src="INP-ENSEEIHT.png" alt="Logo INP"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#">Éducation <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="formation.html">Parcours Académique</a>
+                    <a href="projets_academiques.html">Projets Académiques</a>
+                </div>
+            </li>
+            <li><a href="experience.html">Expérience Pro</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            
+            <li><a href="ppp.html">Mon PPP</a></li>
+
+            <li class="dropdown">
+                <a href="mobility.html">Mobilité & Vie <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="mobility.html#voyages">Mobilité Internationale</a>
+                    <a href="mobility.html#engagement">Engagement Civique</a>
+                    <a href="mobility.html#hobbies">Hobbies</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-container" style="min-height: 80vh; display: flex; flex-direction: column; justify-content: center;">
+        <div class="center-header">
+            <h1 class="page-title">Me Contacter</h1>
+            <p>Une opportunité ? Une question ? N'hésitez pas !</p>
+        </div>
+
+        <div class="contact-container">
+            
+            <a href="mailto:jospinfils.tchatchounzigna@etu.inp-n7.fr" class="contact-btn-large email">
+                <i class="fas fa-envelope"></i> Envoyer un Email
+            </a>
+
+            <a href="https://www.linkedin.com/in/jospin-tchatchou" target="_blank" class="contact-btn-large linkedin">
+                <i class="fab fa-linkedin"></i> Profil LinkedIn
+            </a>
+
+            <a href="tel:+33746517724" class="contact-btn-large phone">
+                <i class="fas fa-phone"></i> +33 7 46 51 17 24
+            </a>
+
+            <a href="https://wa.me/33746517724" target="_blank" class="contact-btn-large whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
